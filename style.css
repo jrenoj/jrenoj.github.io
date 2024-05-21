@@ -173,3 +173,35 @@ footer i {
   font-size: 40px; 
   margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+  nav ul li {
+      display: block;
+      margin: 5px 0;
+  }
+
+  .social-links {
+      flex-direction: column;
+  }
+
+  .social-links a {
+      margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header, footer {
+      padding: 5px 0;
+  }
+
+  main {
+      padding: 10px;
+  }
+
+  section {
+      margin: 10px 0;
+  }
+
+  .social-links i {
+      font-size: 20px;
+  }
+}
