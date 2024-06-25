@@ -282,18 +282,21 @@ hr {
   text-align: center;
   color: #dcdcdc;
   padding: 44px;
+  font-size: large;
 }
 
 .contact-form {
   text-align: center;
   padding: 20px;
   margin-bottom: 40px;
+
 }
 
 .contact-form form {
   display: flex;
   flex-direction: column;
   align-items: center; 
+
 }
 
 .contact-form input,
@@ -309,17 +312,16 @@ hr {
   margin-bottom: 30px;
   padding: 20px;
   border-radius: 10px;
-  color: black;
 
 }
 
 .contact-form button {
-  width: 20%;
+  width: 30%;
   margin-bottom: 60px;
   padding: 20px;
   border-radius: 10px;
-  color: black
-
+  background-color: #dcdcdc;
+  color: #4f4f4fcb
 }
 
 footer {
