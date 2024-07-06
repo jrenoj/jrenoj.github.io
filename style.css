@@ -217,14 +217,18 @@ footer i {
 
  
 .navbar {
-  font-size: small;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .navbar a {
-  font-size: small;
+  font-size: larger;
+}
+
+.title {
+  font-size: medium;
+  padding: 20px;
 }
 
 .box {
