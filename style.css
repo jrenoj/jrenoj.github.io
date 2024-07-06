@@ -216,18 +216,28 @@ footer i {
 
 
  
-.navbar a{
+.navbar {
   font-size: small;
-  margin-left: 20.5px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a {
+  font-size: small;
 }
 
 .box {
   margin: 0px;
   padding: 0px;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 
 }
-
+.box img {
+  width: 100%;
+}
 .one  {
 
   margin: 55px;
