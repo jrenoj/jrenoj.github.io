@@ -5,53 +5,25 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+
   background-color: #031424;
-}
-
-header {
-  margin: 0;
-  background-position-x: center;
-  background-color: #031424;
-}
-
-.top-line {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2.5px;
-  background-color: #ffffff;
-  z-index: 1000;
-}
-
-h1 {
-  margin: 0;
   color: white;
-  text-align: center;
-  font-size: 3em;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
-h3 {
-  margin: 0;
-  color: white;
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 .link {
   color: lightskyblue;
-  text-align: center;
-  font-size: 1.5em;
 }
 
 .navbar ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background-color: #031424;
   display: flex;
   justify-content: flex-end;
+  
+  
 }
 
 .navbar li {
@@ -65,8 +37,9 @@ h3 {
   display: flex; 
   align-items: center; 
   text-align: center;
-  font-size: large;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+
+  
 }
 
 .navbar a:hover {
@@ -80,249 +53,141 @@ hr {
   padding: 0;
 }
 
-.container {
+.title {
   text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
 }
 
-.image-wrapper {
-  display: inline-block;
-  margin: 10px;
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
-.guate {
-  height: 400px;
-  border-radius: 15px;
+.box > div {
+  flex: 1 1 20%;
+  box-sizing: border-box; 
+}
+
+.one {
+  margin: 30px;
   border-style: groove;
-  border-color: #dcdcdc;
+  border-radius: 20px;
+  text-align: center;
+
 }
 
-#about {
-  padding: 80px 20px;
-  margin-top: 0px;
-  background-color: #031424;
-  
+.one img {
+  width: 100%;
+  height: 100%; 
+  border-radius: 20px;
 }
 
+.bruh {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
 .about-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 80px;
   
 }
-
-.about-section, .education-section {
+.bio{
   flex: 1;
   min-width: 300px;
   max-width: 45%;
-  padding: 20px;
-
+  font-size: 20px;
+  font-size: large;
+  line-height: 1.5; 
 }
 
-.about-section h2, .education-section h2 {
-  color: #dcdcdc;
-  font-size: 1.8em;
-  margin-bottom: 0px;
+.technical-s {
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 80px;
 }
-
-.about-section p, .education-section p {
-  color: #dcdcdc;
-  line-height: 1.6;
-  margin: 0px 0;
-}
-
-@media (max-width: 768px) {
-  .about-container {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .about-section, .education-section {
-      max-width: 100%;
-      text-align: center;
-  }
-
-  nav ul li {
-      display: block;
-      margin: 5px 0;
-  }
-
-  .social-links {
-      flex-direction: column;
-  }
-
-  .social-links a {
-      margin: 10px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  header, footer {
-      padding: 5px 0;
-  }
-
-  main {
-      padding: 10px;
-  }
-
-  section {
-      margin: 10px 0;
-  }
-
-  .social-links i {
-      font-size: 20px;
-  }
-}
-
-
-.skills-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: left;
-    border-radius: 10px;
-    margin-bottom: 100px;    
-}
-
-.skills-container h2 {
-    color: #ffffff;
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    text-align: center; 
-
-}
-
 
 
 .skills-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    color: #dcdcdc;
-    font-size: 1.2em;
-    line-height: 1.6;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #dcdcdc;
+  font-size: 1.3em;
+  line-height: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
-    
+  
 }
 
 .skills-list li {
-    display: flex;
-    align-items: center;    
+  display: flex;
+  align-items: center;    
 
-    margin: 10px 0;
-    width: 45%; 
-    hr {
-      border: none;
-      border-top: 2px solid #dcdcdc;
-      margin: 0;
-      padding: 0;
-    }
-    
-
+  margin: 10px 0;
+  width: 15%; 
 }
 
 .skills-list li span {
-    margin-right: 20px;
-    font-size: 1.5em; 
-    color: #dcdcdc; 
-    
-
+  margin-right: 20px;
+  font-size: 1.5em; 
+  color: #dcdcdc; 
 }
 
-@media (max-width: 768px) {
-  .about-container,
-  .skills-container {
-      padding: 10px;
-  }
-  
-  .about-container h2,
-  .skills-container h2 {
-      font-size: 1.5em;
-  }
-  
-  .skills-category h3 {
-      font-size: 1.2em;
-  }
-  .skills-list {
-      font-size: 1em;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; 
-  }
-
-  .skills-list li {
-      width: 45%; 
-      text-align: center; 
-      margin: 5px 2.5%; 
-      display: flex;
-      justify-content: center;
-  }
-
-  .skills-list li span {
-      font-size: 1.2em;
-      margin-right: 10px; 
-  }
-}
-
-#contact h1 {
-
-  padding: 20px;
 
 
-}
-
-.contact-text {
+.contact-text, .forms {
   text-align: center;
-  color: #dcdcdc;
-  padding: 44px;
   font-size: large;
+  
 }
 
-.contact-form {
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 40px;
-
-}
-
-.contact-form form {
+.forms {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-
+  margin-left: 300px;
+  margin-right: 300px;
+  
 }
-
-.contact-form input,
-.contact-form button {
-  width: 50%;
+.forms input,
+.forms button {
+  width: 60%;
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
+  background-color: #dcdcdc;
 }
-.contact-form textarea {
-  width: 50%;
+.forms textarea {
+  width: 60%;
   height: 200px;
   margin-bottom: 30px;
   padding: 20px;
   border-radius: 10px;
 
+  background-color: #dcdcdc;
+
 }
 
-.contact-form button {
-  width: 30%;
+.forms button {
+  width: 25%;
   margin-bottom: 60px;
   padding: 20px;
   border-radius: 10px;
-  background-color: white;
-  color: #363535cb
+  background-color: #dcdcdc;
+  color: #000000
 }
+
 
 footer {
   text-align: center;
@@ -345,4 +210,65 @@ footer a:hover {
 footer i {
   font-size: 40px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+
+ 
+.navbar a{
+  font-size: small;
+  margin-left: 20.5px;  
+}
+
+.box {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 30px;
+
+}
+
+.one  {
+
+  margin: 55px;
+  margin-bottom: 10px;
+
+
+}
+
+.bio {
+  font-size: medium;
+}
+
+.about-container, .technical-s, .forms{
+  margin: 0px;
+  text-align: center;
+  justify-content: center; 
+  margin-bottom: 30px;
+
+}
+.skills-list {
+  font-size: 1em;
+
+  justify-content: center; 
+}
+
+.skills-list li {
+  width: 45%; 
+  margin: 5px 2.5%; 
+  justify-content: center;
+}
+
+.skills-list li span {
+  font-size: 1.2em;
+  margin-right: 10px; 
+}
+.contact-text {
+  font-size: medium;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+}
+  
 }
