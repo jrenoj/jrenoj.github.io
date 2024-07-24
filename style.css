@@ -164,7 +164,8 @@ hr {
 .forms button {
   width: 60%;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 20p                <h5> A place for me to write</h5>
+  x;
   border-radius: 10px;
   background-color: #dcdcdc;
 }
@@ -212,18 +213,74 @@ footer i {
   margin-bottom: 10px;
 }
 
+.title-blog {
+ text-align: left; 
+margin-left: 500px;
+margin-right: 500px;
+padding: 20px;
+margin-bottom: 40px;
+}
+
+.title-blog h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.title-blog p {
+
+  font-size: 25px;
+}
+
+.article {
+  text-align: left; 
+  margin-left: 500px;
+  margin-right: 500px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+
+
+
 @media (max-width: 768px) {
 
+
+.article {
+  text-align: left; 
+  margin: 0px;
+  padding: 40px;
+
+ 
+}
+
+
+
+  .title-blog {
+    text-align: left; 
+    margin: 0px;
+    padding: 40px;
+
+   
+   }
+
+   .title-blog p {
+
+    font-size: 15px;
+  }
 
  
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0px;
 }
 
 .navbar a {
-  font-size: larger;
+  font-size: 15px;
+  margin: 0px;
+  padding: 20px;
+
 }
 
 .title {
@@ -241,6 +298,7 @@ footer i {
 }
 .box img {
   width: 100%;
+  height: auto;
 }
 .one  {
 
